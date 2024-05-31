@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    padding: 120px 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.9;
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to right, #8c2a12, #b74a36);
+    box-shadow: 0 6px #410808;
+}
+
+header .container {
+    display: flex;
+    width: 90%;
+    padding: 0;
+}
+
+.header-title {
+    display: block;
+    width: 240px;
+    color: white;
+    font-size: 48px;
+    line-height: 90px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.header-title:hover {
+    background: #713815;
+    transition: all 1s;
+}
+
+.task {
+    display: flex;
+    background: linear-gradient(to right, #be6e39, #ba8452);
+    width: 1320px;
+    height: 90px;
+    padding: 0 30px;
+    border-left: 20px solid #2b0e08;
+    border-radius: 10px;
+    margin: 30px auto;
+    box-shadow: 5px 5px #581f03;
+}
+
+.task::before {
+    position: relative;
+    top: 14px;
+    left: 1317px;
+    float: left;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-left: 6px solid #2b0e08;
+    border-bottom: 6px solid #2b0e08;
+    border-radius: 5px;
+    content: '';
+    transform: rotate(42deg);
+}
+
+.task-title {
+    color: white;
+    font-size: 54px;
+    line-height: 90px;
+    letter-spacing: 2px;
+}
+
+.arrow {
+    margin-left: auto;
+}
+
+.arrow i {
+    background: white;
+    margin: 15px 30px;
+    border-radius: 50%;
+    box-shadow: 3px 3px #2b0e08;
+    color: #45170e;
+    font-size: 60px;
+}
+
+.arrow i:hover {
+
+    /* block */
+    background: #5c2b13;
+
+    /* letter */
+    color: white;
+
+    /* animation */
+    transition: all 1s;
+}
+
+.arrow i:active {
+
+    /* position */
+    position: relative;
+    top: 3px;
+    left: 0;
+
+    /* block */
+    border: none;
+}
