@@ -55,15 +55,39 @@
 </ul>
 
 <p>Примеры кода:</p>
-<code></code>
+<code>function function9() {
+    res = document.getElementById("task-9");
+    var Hoursec = 60 * 60;
+    var Daysec = Hoursec * 24;
+    var Monthsec = Daysec * 30;
+    res.innerText = `Hour: ${Hoursec}\n Day: ${Daysec}\n Month: ${Monthsec}`;
+}
+function function10() {
+    res = document.getElementById("task-10");
+    let nowTime = new Date();
+    let Hour = nowTime.getHours();
+    let Minute = nowTime.getMinutes();
+    let Second = nowTime.getSeconds();
+    res.innerText = Hour + ":" + Minute + ":" + Second;
+}
+function function20() {
+    res = document.getElementById("task-20");
+    let heightC = 10, dC = 4, PI = Math.PI;
+    let volume = Math.pow((dC / 2), 2) * PI * heightC;
+    res.innerText = volume.toFixed(2) + 'm²'
+}
+function function21() {
+    res = document.getElementById("task-21");
+    let S = 2000000, p = 0.1, year = 5;
+    let r = p / 12, n = year * 12;
+    let perepl = S * (r * Math.pow((1 + r), n)) / (Math.pow((1 + r), n) - 1) * n;
+    res.innerText = Math.round(perepl - S);
+}
+function function22() {
+    res = document.getElementById("task-22");
+    let str = 'Hi', num = 123, flag = true, txt = 'true';
+    res.innerText = `${typeof str}\n ${typeof num}\n ${typeof flag}\n ${typeof txt}\n`;
+}</code>
 </br></br>
-<img src="/Images/code.PNG"></img>
-</br>
-<code></code>
-</br></br>
-<img src="/Images/codecode.PNG"></img>
-</br></br>
-<img src="/Images/codewars.PNG"></img>
-</br>
 <h1 align = "center">Вывод</h1>
 <p>В результате проделанной лабораторной работы, я познакомилась с новыми элементами языка JavaScript и потренировалась в решении простых задач.</p>
